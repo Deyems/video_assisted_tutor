@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mathswit/public_html/wp-content/
+    - /bin/cp -r * $DEPLOYPATH
