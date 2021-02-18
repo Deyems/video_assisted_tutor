@@ -1,0 +1,34 @@
+2021-02-18T05:01:37+00:00 CRITICAL require_once(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-genincludes/activate.php' (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/dashboard-gen.php on line 57
+
+2021-02-18T05:01:40+00:00 CRITICAL require_once(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-genincludes/activate.php' (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/dashboard-gen.php on line 57
+
+2021-02-18T05:01:40+00:00 CRITICAL require_once(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-genincludes/activate.php' (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/dashboard-gen.php on line 57
+
+2021-02-18T05:02:30+00:00 CRITICAL Uncaught Error: Call to undefined function db_dashboard_setup_post_type() in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/includes/activate.php:4
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/class-wp-hook.php(287): db_activate_plugin(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-admin/includes/plugin.php(701): do_action('activate_dashbo...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-admin/plugins.php(58): activate_plugin('dashboard-gen/d...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/includes/activate.php on line 4
+
+2021-02-18T05:02:33+00:00 CRITICAL Uncaught Error: Call to undefined function db_dashboard_setup_post_type() in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/includes/activate.php:4
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/class-wp-hook.php(287): db_activate_plugin('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-admin/plugins.php(193): do_action('activate_dashbo...')
+#4 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/includes/activate.php on line 4
+
+2021-02-18T05:02:33+00:00 CRITICAL Uncaught Error: Call to undefined function db_dashboard_setup_post_type() in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/includes/activate.php:4
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/class-wp-hook.php(287): db_activate_plugin('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-admin/plugins.php(193): do_action('activate_dashbo...')
+#4 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/video_assisted_tutor/wp-content/plugins/dashboard-gen/includes/activate.php on line 4
+
