@@ -12,13 +12,24 @@
 </head>
 <body>
     <div class="container cover">
+
+<div class="flxxy-reg">
+    <div class="c_logo">
+        <div></div>
+    </div>
+    <div class="c_logo2">
+      <a href="http://mathswithgbenga.test" role="button" class="btn btn-primary">Back</a>
+      <!--a href="http://mathswithgbenga.com.ng" role="button" class="btn btn-primary">Back</a-->
+    </div>
+</div>
+
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4 log-in">
 
         <div class="card">
             <div class="card-body">
-               <h4 class="card-title text-center">SigUp Form</h4>
+            <h4 class="card-title text-center text-warning font-weight-bold">SigUp Form</h4>
                 <form method="post" action="">
                 <label for="">Username</label>
                 <div class="input-group mb-3">
@@ -40,7 +51,7 @@
                 <div class="input-group mb-3">
                     <input type="password" name="" class="form-control" placeholder="password">
                     <div class="input-group-append">
-                        <span class="input-group-text"><a href="#"><li class="fa fa-key text-secondary"></li></a></span>
+                        <span class="input-group-text"><a href="#"><li class="fa fa-lock text-secondary"></li></a></span>
                     </div>
                 </div>
                 <div class="row">
@@ -53,12 +64,11 @@
                         <div class="col-md-5"></div>
                     </div>   
                
-                <!--p class="text-center">Registered? &nbsp;<a href="http://mathswithgbenga.test/wp-content/backend/registration/index.php" class="font-weight-bold">SignIn</a></p-->
-                <p class="text-center">Registered? &nbsp;<a href="http://mathswithgbenga.com.ng/wp-content/backend/registration/index.php" class="font-weight-bold">SignIn</a></p>
+                <p class="text-center">Registered? &nbsp;<a href="http://mathswithgbenga.test/wp-content/backend/registration/index.php" class="font-weight-bold">SignIn</a></p>
+                <!--p class="text-center">Registered? &nbsp;<a href="http://mathswithgbenga.com.ng/wp-content/backend/registration/index.php" class="font-weight-bold">SignIn</a></p-->
                </form>
             </div>
         </div>
-           
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -77,6 +87,29 @@ body{
     .cover{
         position: relative;
         top: 80px;
+        margin-bottom: 150px;
     }
+
+    .flxxy-reg{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c_logo{
+        margin-bottom: 30px;
+    }
+
+    .c_logo>div{
+        border: 2px solid green;
+        height: 60px;
+        width: 150px; 
+        background: url(../images/logo.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        border-radius: 20%;
+    }
+
 </style>
 
