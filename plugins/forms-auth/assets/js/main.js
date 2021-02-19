@@ -29,7 +29,7 @@
     });
     
     //Listen for Submission of REGISTER Form
-    $("#register-form").on("submit", function(e){
+    $("#signup-form").on("submit", function(e){
         e.preventDefault();
         $("#register-status").html(`
             <div class="alert alert-info">Please wait!</div>
@@ -37,14 +37,14 @@
         $(this).hide();
         let form = {
             _wpnonce: $("#_wpnonce").val(),
-            name: $("#register-form-name").val(),
-            username: $("#register-form-username").val(),
-            email:  $("#register-form-email").val(),
-            password:  $("#register-form-password").val(),
-            repassword:  $("#register-form-repassword").val(),
-            action: 'my_register_user'
+            username: $("#username").val(),
+            email:  $("#email").val(),
+            password:  $("#password").val(),
+            action: 'db_register_user'
         }
-        $.post( myrecipe_obj.ajax_url,form ,function(data){
+        console.log(form);
+        console.log('did we get here');
+        $.post( db_auth_obj.ajax_url,form ,function(data){
             if(data.status == 2){
                 $("#register-status").html(`
                     <div class="alert alert-success">Account created!</div>
@@ -54,7 +54,7 @@
                 $("#register-status").html(`
                     <div class="alert alert-danger">Unable to create account.</div>
                 `);
-                $("#register-form").show();
+                $("#signup-form").show();
             }
         });
     });

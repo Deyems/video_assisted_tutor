@@ -5,6 +5,12 @@
 
 body{
     background: #F8F8FF;
+    background: linear-gradient(to left, rgba(230, 230, 245, 0.2), rgba(230, 230, 245, 0.7));
+}
+
+.cover{
+    position: relative;
+    top: 80px;
 }
 
 .flex1{

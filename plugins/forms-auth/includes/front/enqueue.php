@@ -4,8 +4,10 @@ function db_enqueue_scripts(){
     
     wp_register_style('db_bootstrap', 
     plugins_url('/assets/css/bootstrap.css', AUTH_FORM_PLUGIN_URL));
+
     wp_register_style('db_font_awesome', 
     plugins_url('/assets/css/font-awesome.css', AUTH_FORM_PLUGIN_URL));
+
     wp_register_style('db_custom', 
     plugins_url('/assets/css/mycss.css', AUTH_FORM_PLUGIN_URL));
     
@@ -19,7 +21,7 @@ function db_enqueue_scripts(){
     '1.0.0',
     true);
     
-    wp_localize_script('db_main', 'db_recipe_obj', [
+    wp_localize_script('db_main', 'db_auth_obj', [
         'ajax_url' => admin_url('admin-ajax.php'),
         'home_url' => home_url('/')
     ]);

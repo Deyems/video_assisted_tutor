@@ -26,6 +26,7 @@ require_once __DIR__ . '/process/reset-password.php';
 //Hooks
 add_action('wp_enqueue_scripts', 'db_enqueue_scripts', 100);
 add_action('wp_ajax_nopriv_db_register_user','db_register_user');
+add_action('wp_ajax_db_register_user','db_register_user');
 add_action('wp_ajax_nopriv_db_login_user','db_login_user');
 add_action('wp_ajax_nopriv_db_reset_password','db_reset_password');
 
