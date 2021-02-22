@@ -57,6 +57,13 @@ if ( ! defined( 'DASHBOARD_DOMAIN_URI' ) ) {
 require_once __DIR__ . '/includes/activate.php';
 require_once __DIR__ . '/includes/init.php';
 require_once __DIR__ . '/includes/deactivate.php';
+
+/**Needed scripts for front-end */
+require_once __DIR__ . '/includes/front/enqueue.php';
+/**Logout */
+require_once __DIR__ . '/includes/front/logout.php';
+/**Show nav based on Login or Logout */
+require_once __DIR__ . '/includes/front/editnav.php';
  
 /**
  * Hooks
@@ -64,7 +71,13 @@ require_once __DIR__ . '/includes/deactivate.php';
 register_activation_hook( DASHBOARD_DOMAIN_FILE, 'db_activate_plugin' );
 register_deactivation_hook( DASHBOARD_DOMAIN_FILE, 'db_deactivate_plugin' );
 add_action('init', 'db_setup_dashboard_post_type', 0);
- 
+/**Hook to wp_enqueue_script to style dashboard and adjust content of dashboard */
+add_action('wp_enqueue_scripts', 'db_pages_enqueue_scripts', 100);
+/**Filter the NAV MENU */
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+add_action('wp_logout','auto_redirect_after_logout');
+
 /**
  * Shortcodes
  */
+// add_shortcode('db_show_dashboard', 'db_show_dashboard_shortcode');

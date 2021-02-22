@@ -37,7 +37,7 @@ function db_setup_dashboard_post_type(){
 		'description' => __( 'To generate pages for users dashboard', 'videotutor' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-admin-users',
-		'supports' => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'comments', 'page-attributes', 'post-formats', 'custom-fields'],
+		'supports' => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'page-attributes', 'post-formats', 'custom-fields'],
 		'taxonomies' => ['dashboardpages', 'userpages'],
 		'public' => true,
 		'show_ui' => true,

@@ -1,0 +1,43 @@
+#content{
+    background-color: #F8F8FF;
+    padding: 1rem 3rem;
+}
+
+[itemprop="headline"]{
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.personal-info, .security, .payment,
+.notification, .privacy, .quiz-report,
+.quiz-result, .my-lecture{
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 4px 0px rgba(200, 200, 200, 0.6);
+    padding: 0.6rem;
+}
+
+.fa-user-plus,
+.fa-link,
+.fa-chart-area,
+.fa-info,
+.fa-user-secret,
+.fa-steam-square,
+.fa-book-reader{
+    font-size: 2rem;
+    color: #0157B3;
+}
+
+.left-flex{
+    background-color: #fff;
+    padding: 5rem 1.5rem;
+}
+
+.right-flex{
+    background-color: #F0F8FE;
+    padding: 1rem;
+}
