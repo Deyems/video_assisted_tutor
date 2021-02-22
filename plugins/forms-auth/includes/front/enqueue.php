@@ -23,7 +23,8 @@ function db_enqueue_scripts(){
     
     wp_localize_script('db_main', 'db_auth_obj', [
         'ajax_url' => admin_url('admin-ajax.php'),
-        'home_url' => home_url('/')
+        'home_url' => home_url('/'),
+        'dashboard_url' => get_permalink(1627)
     ]);
 
     wp_enqueue_script('db_main');

@@ -2,15 +2,14 @@
 
 function db_register_user(){
     $output = ['status' => 1];
-    var_dump($output);
-    var_dump('Did we submit register');
+
     $nonce = isset($_POST['_wpnonce']) ? $_POST['_wpnonce'] : '';
 
     if(!wp_verify_nonce($nonce,'db_sign_up')){
         wp_send_json($output);
     }
 
-    if(!isset($_POST['username'], $_POST['email'], $_POST['password'], $_POST['repassword'])
+    if(!isset($_POST['username'], $_POST['email'], $_POST['password'] )
     ){
         wp_send_json($output);
     }
@@ -22,7 +21,7 @@ function db_register_user(){
     // $repassword = sanitize_text_field($_POST['repassword']);
 
     if(username_exists($username) || email_exists($email) ||
-    $password !== $repassword || !is_email($email)
+    !is_email($email)
     ){
         wp_send_json($output);
     }
