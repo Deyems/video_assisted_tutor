@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F8F8FF;
+    background: linear-gradient(to left, rgba(230, 230, 245, 0.2), rgba(230, 230, 245, 0.7));
+}
+
+.cover{
+    position: relative;
+    top: 80px;
+}
+
+.flex1{
+    margin-bottom: 100px;
+}
+
+.flex2{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    top: 70px;
+    background:  #F0F8FF;
+    box-shadow: 0 0 3px 0px silver;
+    border-radius: 7px;
+    transition: 0.25s ease-in-out
+}
+
+.flex2:hover{
+    box-shadow: 0 0 7px 0px silver;
+}
+
+.side_bar{
+    background: white;
+    padding: 0px 35px 0 35px;
+}
+
+.side_bar li{
+    list-style-type: none;
+}
+
+.side_bar>div>div{
+    margin-bottom: 35px;
+}
+
+.main_bar{
+    /*border: 2px solid red;*/
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 100px 0;
+}
+
+.group1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.together{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accty{
+    margin-top: 20px;
+}
+
+.together>div:nth-of-type(2), .together>div:nth-of-type(3){
+    margin-left: 30px;
+}
+
+.group2{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
+}
+
+.p_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group2>div{
+    box-shadow: 0px 0px 2px 0px silver;
+    background: white;
+    width: 32%;
+    padding: 25px 0 15px 0;
+    border-radius: 7px;
+    transition: 0.25s ease-in-out
+}
+
+.group2>div:hover{
+    box-shadow: 0px 0px 4px 0px silver;
+}
+
+.group2>div>div{
+    width: 90%;
+    margin: auto;
+}
+
+/*group 3 start here*/
+.group3{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
+}
+
+.group3>div{
+    box-shadow: 0px 0px 2px 0px silver;
+    background: white;
+    width: 32%;
+    padding: 35px 0 25px 0;
+    border-radius: 7px;
+    transition: 0.25s ease-in-out
+}
+
+.group3>div:hover{
+    box-shadow: 0px 0px 4px 0px silver;
+}
+
+.group3>div>div{
+    width: 90%;
+    margin: auto;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    top: 20px;
+}
+
+.serach_bar{
+    border: 2px solid silver;
+    background: white;
+    border-radius: 5px;
+}
+
+.search1, search2{
+    position: relative;
+    top: 5px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo1{
+    display: flex;
+}
+
+.main-logo{
+    border: 2px solid silver;
+    border-radius: 7px;
+    height: 55px;
+    width: 85px;
+    background: url(../../images/logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vatm{
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.harmbug, .pull{
+    display: none;
+}
+
+.group4{
+    display: flex;
+    justify-content: space-around;
+}
+
+.group4>div:nth-of-type(1){
+    width: 40%;
+}
+
+.group4>div:nth-of-type(1) .vidx{
+    padding: 15px 0 15px 0;
+    width: 95%;
+    box-shadow: 2px 2px 5px 1px silver;
+    height: 150px;
+    border-radius: 7px;
+    background: white;
+}
+
+.vidx-x1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group4>div:nth-of-type(2){
+    width: 70%;
+    border-radius: 10px;
+    background: white;
+}
+
+.group4>div:nth-of-type(2) .vid1{
+    width: 100%;
+    box-shadow: 2px 2px 5px 1px silver;
+    padding: 15px 0 7px 0;
+    height: 150px;
+}
+
+.lecture1{
+    padding: 10px 15px;
+    position: relative;
+    /*left: 130px;*/
+    border-radius: 100%;
+    background: red;
+}
+
+.vid2{
+    display:flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px){
+    @media screen and (max-width: 992px){
+        @media screen and (max-width: 768px){
+
+            .serach_bar{        
+                margin-bottom: 15px;
+            }
+
+            .serach_bar input{        
+                padding-right: 20px;
+            }
+            
+            .group2{
+                display: block;
+            }
+            
+            .group2>div{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .side_bar{
+                width: 100%;
+                display: none;
+            }
+
+            .side_bar>div{
+                /*border: 2px solid red;*/
+                width: 40%;
+                margin: auto;
+            }
+
+            .main_bar{
+                /*border: 2px solid yellow;*/
+                width: 90%;
+                margin: auto;
+                padding: 20px 20px 100px 20px 0; 
+            }
+
+            /*group 3 start here*/
+            .group3{
+                display: block;
+            }
+
+            .group3>div{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .harmbug{
+                display: flex;
+                margin-bottom: 35px !important;
+                position: relative;
+                left: 40px;
+            }
+
+            .pull{
+                display: flex;
+            }
+            .rmk{
+                margin-left:20px;
+            }  
+
+            .group4{
+                display: block;
+            }
+
+            .group4>div:nth-of-type(1){
+                width: 100%;
+            }
+            
+            .group4>div:nth-of-type(1) .vidx{
+                width: 100%;
+            }
+            
+            .group4>div:nth-of-type(2){
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        @media screen and (max-width: 500px){
+            .group1{
+                display: block;
+            }
+            
+        }
+    }
+    
+}
