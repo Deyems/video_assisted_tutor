@@ -2,8 +2,8 @@
 
 function db_enqueue_scripts(){
     
-    wp_register_style('db_bootstrap', 
-    plugins_url('/assets/css/bootstrap.css', AUTH_FORM_PLUGIN_URL));
+    wp_register_style('db_boostrap', 
+    plugins_url('/assets/css/boostrap.css', AUTH_FORM_PLUGIN_URL));
 
     wp_register_style('db_font_awesome', 
     plugins_url('/assets/css/font-awesome.css', AUTH_FORM_PLUGIN_URL));
@@ -11,7 +11,7 @@ function db_enqueue_scripts(){
     wp_register_style('db_custom', 
     plugins_url('/assets/css/mycss.css', AUTH_FORM_PLUGIN_URL));
     
-    wp_enqueue_style('db_bootstrap');
+    wp_enqueue_style('db_boostrap');
     wp_enqueue_style('db_font_awesome');
     wp_enqueue_style('db_custom');
     
