@@ -64,6 +64,7 @@ require_once __DIR__ . '/includes/front/enqueue.php';
 require_once __DIR__ . '/includes/front/logout.php';
 /**Show nav based on Login or Logout */
 require_once __DIR__ . '/includes/front/editnav.php';
+require_once __DIR__ . '/blocks/enqueue.php';
  
 /**
  * Hooks
@@ -76,6 +77,10 @@ add_action('wp_enqueue_scripts', 'db_pages_enqueue_scripts', 100);
 /**Filter the NAV MENU */
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 add_action('wp_logout','auto_redirect_after_logout');
+/** Enqueue Editor Assets */
+add_action ('enqueue_block_editor_assets', 'vu_enqueue_block_editor_assets');
+add_action ('enqueue_block_assets', 'vu_enqueue_block_assets');
+
 
 /**
  * Shortcodes
