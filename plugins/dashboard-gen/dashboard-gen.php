@@ -80,7 +80,8 @@ add_action('wp_logout','auto_redirect_after_logout');
 /** Enqueue Editor Assets */
 add_action ('enqueue_block_editor_assets', 'vu_enqueue_block_editor_assets');
 add_action ('enqueue_block_assets', 'vu_enqueue_block_assets');
-
+/**Script in the block to control front end */
+add_action('wp_enqueue_scripts', 'db_pages_block_enqueue_scripts', 80);
 
 /**
  * Shortcodes
