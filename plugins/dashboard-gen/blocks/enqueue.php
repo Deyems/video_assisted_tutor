@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/app/latest-post-block/index.php';
+// require_once __DIR__ . '/app/video-upload/index.php';
 function vu_enqueue_block_editor_assets(){
     wp_register_script(
         'vu_blocks_bundle', 
@@ -25,4 +25,17 @@ function vu_enqueue_block_assets(){
     filemtime(plugin_dir_path(DASHBOARD_DOMAIN_FILE) . '/blocks/dist/blocks-main.css')
     );
     wp_enqueue_style('vu_web_fonts');
+}
+
+/**Script to control front end display of Block */
+
+function db_pages_block_enqueue_scripts(){
+    
+    wp_register_script('db_video_script', 
+    plugins_url('/blocks/app/video-upload/front-end/index.js', DASHBOARD_DOMAIN_FILE),
+    ['jquery'],
+    '1.0.0',
+    true);
+    
+    wp_enqueue_script('db_video_script');
 }
